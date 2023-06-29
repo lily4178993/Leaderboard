@@ -20,7 +20,7 @@ const REFRESH_DATA = () => {
       }
     })
     .catch((error) => {
-      console.error('Erreur lors du rafraîchissement des données :', error);
+      console.error('Error refreshing data:', error);
     });
 };
 
