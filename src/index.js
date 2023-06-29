@@ -11,6 +11,6 @@ FORM_ELEMENT.addEventListener('submit', (event) => {
 // Add an eventListener on BUTTON_REFRESH
 // Consume API to get new uptade of the players and their score
 const BUTTON_REFRESH = document.getElementById('btn-refresh');
-const MY_SCOREBOARD = () => BUTTON_REFRESH.addEventListener('click', myBoardList);
+const MY_SCOREBOARD = () => BUTTON_REFRESH.addEventListener('click', myBoardList());
 
 MY_SCOREBOARD();
