@@ -1,5 +1,5 @@
 import { getAllPlayers, myGameID } from './api/read.js';
-import errorRefresh from './alertMessage.js';
+import { errorRefresh } from './alertMessage.js';
 import myBoardList from './scoreboard.js';
 import sortList from './sortList.js';
 

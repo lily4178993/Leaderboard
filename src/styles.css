@@ -159,3 +159,74 @@ form {
   border: 1px solid transparent;
   border-radius: var(--radius-4);
 }
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  background: var(--color-blue-3);
+  color: #fff;
+  text-align: center;
+  border-radius: var(--radius-4);
+  padding: 16px;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Source from https://www.w3schools.com/howto/howto_js_snackbar.asp
+  Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

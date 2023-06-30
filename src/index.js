@@ -1,11 +1,13 @@
 import './styles.css';
 import refreshData from './utils/refreshData.js';
 import checkInputValidity from './utils/inputFieldValidity.js';
+import { alertSubmitMessage } from './utils/alertMessage.js';
 
 const FORM_ELEMENT = document.querySelector('.add-score-container form');
 FORM_ELEMENT.addEventListener('submit', (event) => {
   event.preventDefault();
   checkInputValidity();
+  alertSubmitMessage();
 });
 
 // Add an eventListener on BUTTON_REFRESH

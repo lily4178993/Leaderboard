@@ -11,4 +11,15 @@ const ERROR_REFRESH_MESSAGE = () => {
   setTimeout(() => { ERROR_REFRESH.style.display = 'none'; }, 2000);
 };
 
-export { ERROR_REFRESH_MESSAGE as default };
+const ALERT_SUBMIT_MESSAGE = () => {
+  const SNACKBAR = document.getElementById('snackbar');
+  SNACKBAR.className = 'show';
+  setTimeout(() => {
+    SNACKBAR.className = SNACKBAR.className.replace('show', '');
+  }, 3000);
+};
+
+export {
+  ERROR_REFRESH_MESSAGE as errorRefresh,
+  ALERT_SUBMIT_MESSAGE as alertSubmitMessage,
+};
