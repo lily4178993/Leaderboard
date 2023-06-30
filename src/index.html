@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+  </head>
+  <body>
+    <header>
+      <h1>Leaderboard</h1>
+    </header>
+    <main>
+      <div class="scoreboard-container">
+        <div class="head">
+          <h2>Recent scores</h2>
+          <button type="submit" id="btn-refresh" class="button">Refresh</button>
+        </div>
+        <ul class="body"></ul>
+        <p id="error-refresh" class="footer"></p>
+      </div>
+      <div class="add-score-container">
+        <div class="head">
+          <h2>Add your score</h2>
+        </div>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="input-field"
+            placeholder="Your name"
+          />
+          <input
+            type="number"
+            name="score"
+            id="score"
+            class="input-field"
+            placeholder="Your score"
+          />
+
+          <input type="submit" value="Submit" class="button" />
+        </form>
+      </div>
+      <div id="snackbar">Your information has been saved. Click 'Refresh' to refresh the scoreboard.</div>
+    </main>
+  </body>
+</html>
