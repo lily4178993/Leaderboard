@@ -14,9 +14,10 @@ The leaderboard website displays scores submitted by different players. It also 
 
 <!-- TABLE OF CONTENTS -->
 ## <b>Table of Contents 📗
-- [Built With](#built-with) 🛠
+- [Built With 🛠](#built-with)
 - [Key Features 🏷️](#key-features)
 - [Screenshot 📷](#screenshot)
+- [Live Demo🚀](#live-demo)
 - [Prerequisites 🧱](#prerequisites)
 - [Setup ⚙️](#setup)
 - [Install 🏗️](#install)
@@ -63,6 +64,14 @@ Below is an overview of the app.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
+<!-- LIVE DEMO -->
+## <b>Live Demo 🚀</b><a name="live-demo"></a>
+
+This project is hosted on GitHub pages, so if you want to check it online, please click 😊 [here](https://lily4178993.github.io/Leaderboard/dist/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
 <!-- PREREQUISITIES -->
 ## **Prerequisites 🧱**<a name="prerequisites"></a>
 
@@ -92,7 +101,7 @@ cd Leaderboard
 ```
 Checkout the branch
 ```
-git checkout hit-api
+git checkout main
 ```
 <br>
 
