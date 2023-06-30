@@ -1,5 +1,7 @@
 import { getAllPlayers, myGameID } from './api/read.js';
+import { errorRefresh } from './alertMessage.js';
 import myBoardList from './scoreboard.js';
+import sortList from './sortList.js';
 
 let lastData = null; // Variable to store the latest recovered data
 
@@ -16,11 +18,12 @@ const REFRESH_DATA = () => {
       if (HAS_NEW_DATA(data)) {
         lastData = data;
         // Perform actions for new data
+        sortList(lastData);
         myBoardList(lastData);
       }
     })
-    .catch((error) => {
-      console.error('Error refreshing data:', error);
+    .catch(() => {
+      errorRefresh();
     });
 };
 
