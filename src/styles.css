@@ -133,6 +133,16 @@ main {
   border-right-color: inherit;
 }
 
+.scoreboard-container .footer {
+  text-align: center;
+  display: none;
+}
+
+.scoreboard-container .footer img {
+  width: 45px;
+  vertical-align: middle;
+}
+
 .add-score-container .head { margin-bottom: 2em; }
 
 form {

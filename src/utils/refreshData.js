@@ -1,4 +1,5 @@
 import { getAllPlayers, myGameID } from './api/read.js';
+import errorRefresh from './alertMessage.js';
 import myBoardList from './scoreboard.js';
 import sortList from './sortList.js';
 
@@ -21,8 +22,8 @@ const REFRESH_DATA = () => {
         myBoardList(lastData);
       }
     })
-    .catch((error) => {
-      console.error('Error refreshing data:', error);
+    .catch(() => {
+      errorRefresh();
     });
 };
 
